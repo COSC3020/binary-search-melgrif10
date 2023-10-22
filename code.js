@@ -1,7 +1,5 @@
 function binarySearch(list, element) {
-    list.sort(function(a, b){   // Check if the array is numerically sorted or not
-        return a-b;
-    });
+    list.sort((a,b) => a-b);
 
     let low = 0;                //Start of the array
     let mid = 0;                //Middle
@@ -9,7 +7,7 @@ function binarySearch(list, element) {
     let result = -1             //Set result to -1 if element isn't found
 
     while(low <= high){                    //While not at the end of the array
-        mid = Math.floor((low + high)/2);  //Find the middle of the array
+       const mid = Math.floor((low + high)/2);  //Find the middle of the array
         if(list[mid] == element){          //If the element in the middle of the array is equal to the element being looked for 
             result = mid;                  //The result is the value of mid
             high = mid - 1;                //Look for first occurance of duplicate if needed
