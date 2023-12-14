@@ -1,5 +1,5 @@
 function binarySearch(list, element) {
-    list.sort((a,b) => a-b);
+    list.sort;
 
     let low = 0;                //Start of the array
     let mid = 0;                //Middle
